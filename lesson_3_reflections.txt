@@ -2,3 +2,19 @@ When would you want to use a remote repository rather than keeping all your work
 
 	When I want to collaborate with others over the internet. When i want to save and protect my work with an online copy. 
 
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	I may not be ready to share my changes publicly on my Github account yet. 
+
+Describe the differences between forks, clones, and branches.When would you use one instead of another?
+
+	Forks describe the cloning of repos, only within Github. Clones refer to both the cloning of any repo in and outside of Github, including doing so on your own computer. Branches refer to the duplication of code within a single repo. 
+
+
+Command learned:
+
+git remote || view remotes in Github. empty if no repos
+git remote add <name of repo ><url here> || add Github repo as a remote repo to my computer
+git remote -v || gets more verbose display of remotes in Github, shows which url to fetch and push data 
+git push <remote repo> <branch i want to push> || the Github remote i want to push to, and the branch 
+git pull <name of remote repo> <name of branch of remote repo> - update local repo to the same state as the remote repo on Github
