@@ -2,19 +2,26 @@ What happens when you initialize a repository? Why do you need to do it?
 	
 	it converts a normal folder into a git repo. 
 
-How is the staging area different from the working directory and the repository?
-What value do you think it offers?
+How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+	Staging area allows git to track changes in the working directory before it gets committed to the repo. it helps to avoid semi-permanent changes to features but still allows us to monitor changes. 
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+How can you use the staging area to make sure you have one commit per logical change?
+
+	By checking that the files involved in the one logical change are exactly what you want. 
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	Making experimental features. trying to create a version in a different language. they help to minimize errors to a localized area away from the main production branch. 
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+	They introduce the concept of reachability which helps me know when i have a detached head. 
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
-manually?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+	It combines changes of the code in both branches into one single branch. That is because we can access commits in both branches after merging. 
+
+What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges manually?
+	
+	People can discuss how to resolve changes made by either side rather than allow auto merging which can result in unsensible changes to code. 
